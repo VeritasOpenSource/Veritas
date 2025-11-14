@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Roman Vlasov"
+	],
+	"copyright": "Copyright © 2025, Roman Vlasov",
+	"description": "Package entity for VERITAS",
+	"license": "MIT",
+	"name": "pkg"
+}
