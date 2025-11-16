@@ -1,5 +1,5 @@
 module veritas.analyzer;
 
-// public  {
-//     import va
-// }
+public  {
+    import veritas.analyzer.analyzer;
+}

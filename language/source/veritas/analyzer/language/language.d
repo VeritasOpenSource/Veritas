@@ -1,9 +1,14 @@
-module veritas.analyzer.langauge.language;
+module veritas.analyzer.language.language;
 
-import veritas.analyzer.analyzer;
+import veritas.analyzer;
 import veritas.pkg.pkg;
+import std.file;
+import std.algorithm;
+import std.path;
+import std.conv;
 
-/*
+VrtsLanguage[] ldb;
+
 class VrtsLanguage {
     string      caption;
 
@@ -27,7 +32,7 @@ class VrtsLanguage {
 
 static this() {
 	VrtsLanguage clang = new VrtsLanguage("C/C++", [".h", ".c", ".hpp", ".inl"]);
-	VrtsLanguage rs = new VrtsLanguage("Rust", [".rs", ".rst"]);
+	VrtsLanguage rs = new VrtsLanguage("Rust", [".rs"]);
 	VrtsLanguage asmbly = new VrtsLanguage("Assembly", [".asm", ".S"]);
 	VrtsLanguage shell = new VrtsLanguage("Shell", [".sh"]);
 	VrtsLanguage make = new VrtsLanguage("Makefile", []);
@@ -75,6 +80,10 @@ VrtsLanguage findLangByName(string name) {
 class VrtsLanguageEntry {
 	VrtsLanguage 	language;
 	string[] 		files;
+
+	override string toString() const @safe pure nothrow {
+			return language.toString() ~ ": " ~ files.length.to!string ~ " files";
+	}
 }
 
 VrtsLanguageEntry findLangEntryByLang(ref VrtsLanguageEntry[] entries, VrtsLanguage lang) {
@@ -89,13 +98,16 @@ VrtsLanguageEntry findLangEntryByLang(ref VrtsLanguageEntry[] entries, VrtsLangu
 	return entries[$-1];
 }
 
-class LangaugeAnalyzer : Analyzer {
+class LanguageAnalyzer : Analyzer {
+
     VrtsLanguageEntry[]  identLanguages(VrtsPackage pkg) {
         auto dirs = dirEntries(pkg.localPath, SpanMode.depth, false);
+		VrtsLanguageEntry[] languages;
 
-        int fileCount;
+        int filesCount;
 
         foreach(DirEntry dir; dirs) {
+
             // write(dir.name);
 			if(dir.isFile()) {
 				if(dir.name.isPathHidden())
@@ -127,7 +139,9 @@ class LangaugeAnalyzer : Analyzer {
     }
 
     void    analyze(VrtsPackage pkg) {
-        auto res = identLanguages(pkg);
-        
+		import std.stdio;
+		auto res = identLanguages(pkg);
+
+		res.each!(a => writeln(a));
     }
-}*/
+}

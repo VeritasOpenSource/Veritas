@@ -3,6 +3,8 @@ import std.stdio;
 // import veritas.pkg;
 import veritas.pkg;
 import veritas.db.db;
+import veritas.analyzer.language;
+// import veritas.analyzer.langauge;
 
 
 void main()
@@ -29,6 +31,14 @@ void main()
 	db.initPaths();
 	// auto pkg = db.addPkg(pkg);
 	auto pkg = db.getPackage("linux");
+	
+	LanguageAnalyzer lng = new LanguageAnalyzer();
+
+	// lng.identLanguages(pkg);
+
+	lng.analyze(pkg);
 
 	writeln(pkg.name);
+
+
 }

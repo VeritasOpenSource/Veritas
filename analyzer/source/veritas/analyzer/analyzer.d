@@ -1,4 +1,4 @@
-module viritas.analyzer.analyzer;
+module veritas.analyzer.analyzer;
 
 interface Analyzer {
     
