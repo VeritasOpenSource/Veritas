@@ -16,3 +16,6 @@ veritas-test-*
 *.obj
 *.lst
 /cache/
+db/libveritas_db.a
+language/libveritas_language.a
+analyzer/libveritas_analyzer.a

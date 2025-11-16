@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Roman Vlasov aka Doctor"
+	],
+	"copyright": "Copyright © 2025, Roman Vlasov aka Doctor",
+	"description": "Analyzer common interface for Viritas",
+	"license": "BSL-1.0",
+	"name": "analyzer"
+}

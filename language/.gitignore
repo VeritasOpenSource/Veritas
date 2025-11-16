@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/language
+language.so
+language.dylib
+language.dll
+language.a
+language.lib
+language-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

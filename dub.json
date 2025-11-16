@@ -8,9 +8,15 @@
 	"name": "veritas",
 	"targetType": "executable",
 	"dependencies": {
-		":pkg" : "*"
+		":pkg" : "*",
+		":analyzer" : "*",
+		":language" : "*",
+		":db" : "*"
 	},
 	"subPackages": [
-		"pkg"
+		"pkg",
+		"analyzer",
+		"language",
+		"db"
 	]
 }
