@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/funcdecomposer
+funcdecomposer.so
+funcdecomposer.dylib
+funcdecomposer.dll
+funcdecomposer.a
+funcdecomposer.lib
+funcdecomposer-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

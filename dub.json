@@ -11,12 +11,15 @@
 		":pkg" : "*",
 		":analyzer" : "*",
 		":language" : "*",
-		":db" : "*"
+		":db" : "*",
+		":funcdecomposer" : "*"
+
 	},
 	"subPackages": [
 		"pkg",
 		"analyzer",
 		"language",
-		"db"
+		"db",
+		"funcdecomposer"
 	]
 }

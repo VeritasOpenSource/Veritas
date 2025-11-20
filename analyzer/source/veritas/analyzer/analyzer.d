@@ -1,5 +1,5 @@
 module veritas.analyzer.analyzer;
 
-interface Analyzer {
+interface VrtsAnalyzer {
     
 }

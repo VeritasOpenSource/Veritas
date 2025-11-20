@@ -98,7 +98,7 @@ VrtsLanguageEntry findLangEntryByLang(ref VrtsLanguageEntry[] entries, VrtsLangu
 	return entries[$-1];
 }
 
-class LanguageAnalyzer : Analyzer {
+class LanguageAnalyzer : VrtsAnalyzer {
 
     VrtsLanguageEntry[]  identLanguages(VrtsPackage pkg) {
         auto dirs = dirEntries(pkg.localPath, SpanMode.depth, false);

@@ -1,5 +1,6 @@
 .dub
 docs.json
+dub.selection.json
 __dummy.html
 docs/
 /veritas
@@ -12,10 +13,7 @@ veritas-test-*
 *.exe
 *.pdb
 *.o
-*.a*.
+*.a*
 *.obj
 *.lst
 /cache/
-db/libveritas_db.a
-language/libveritas_language.a
-analyzer/libveritas_analyzer.a
