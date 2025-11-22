@@ -2,7 +2,7 @@ import std.stdio;
 
 // import veritas.pkg;
 import veritas.pkg;
-import veritas.db.db;
+import veritas.db;
 import veritas.analyzer.language;
 import veritas.funcdecomposer;
 // import veritas.analyzer.langauge;
@@ -10,12 +10,14 @@ import veritas.funcdecomposer;
 
 void main()
 {
-	VrtsPackage bash = new VrtsPackage();
+	auto db = new VrtsAlpmBackend;
+	db.sync();
+	// VrtsPackage bash = new VrtsPackage();
 
-	bash.localPath = "../bash-5.3";
+	// bash.localPath = "../bash-5.3";
 
-	auto fDecomp = new VrtsFunctionDecomposer(bash);
+	// auto fDecomp = new VrtsFunctionDecomposer(bash);
 
-	fDecomp.scanFuncs();
-	// fDecomp.decompose(bash);
+	// fDecomp.scanFuncs();
+	// // fDecomp.decompose(bash);
 }
