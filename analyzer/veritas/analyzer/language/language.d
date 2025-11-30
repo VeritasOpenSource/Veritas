@@ -1,7 +1,7 @@
 module veritas.analyzer.language.language;
 
 import veritas.analyzer;
-import veritas.pkg.pkg;
+import veritas.pkg;
 import std.file;
 import std.algorithm;
 import std.path;

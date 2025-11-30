@@ -1,6 +1,6 @@
 module veritas.pkg.pkg;
 
-public import veritas.pkg.lang;
+// public import veritas.pkg.lang;
 
 import std.file;
 import std.algorithm;

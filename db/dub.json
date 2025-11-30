@@ -8,5 +8,7 @@
 	"name": "db",
 	"dependencies": {
 		"veritas:pkg" : "*"
-	}
+	},
+	"importPaths": ["."],
+	"sourcePaths": ["."]
 }

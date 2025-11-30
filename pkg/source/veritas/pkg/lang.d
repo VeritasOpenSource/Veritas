@@ -1,1 +1,0 @@
-module veritas.pkg.lang;

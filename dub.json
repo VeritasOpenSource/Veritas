@@ -10,16 +10,11 @@
 	"dependencies": {
 		":pkg" : "*",
 		":analyzer" : "*",
-		":language" : "*",
-		":db" : "*",
-		":funcdecomposer" : "*"
-
+		":db" : "*"
 	},
 	"subPackages": [
 		"pkg",
 		"analyzer",
-		"language",
-		"db",
-		"funcdecomposer"
+		"db"
 	]
 }

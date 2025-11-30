@@ -1,9 +1,8 @@
-module veritas.funcdecomposer.function_;
+module veritas.analyzer.funcdecomposer.function_;
 
 import std.process;
 import std.stdio;
 import std.json;
-
 
 import veritas.pkg;
 
