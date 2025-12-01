@@ -7,8 +7,10 @@
 	"license": "MIT",
 	"name": "db",
 	"dependencies": {
-		"veritas:pkg" : "*"
+		"veritas:pkg" : "*",
+		"libalpmd" : "~main"
 	},
+	"targetType": "library",
 	"importPaths": ["."],
 	"sourcePaths": ["."]
 }

@@ -5,6 +5,7 @@ import veritas.pkg;
 import veritas.db;
 import veritas.analyzer.language;
 import veritas.analyzer.funcdecomposer;
+import std.process;
 // import veritas.analyzer.langauge;
 
 

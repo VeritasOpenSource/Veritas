@@ -3,18 +3,19 @@
 		"Roman Vlasov aka Doctor"
 	],
 	"copyright": "Copyright © 2025, Roman Vlasov aka Doctor",
+	"dependencies": {
+		"libalpmd": "0.0.1",
+		"veritas:analyzer": "*",
+		"veritas:db": "*",
+		"veritas:pkg": "*"
+	},
 	"description": " Verification of Open‑source Reliability, Integrity, and Technical Assurance System",
 	"license": "MIT",
 	"name": "veritas",
-	"targetType": "executable",
-	"dependencies": {
-		":pkg" : "*",
-		":analyzer" : "*",
-		":db" : "*"
-	},
 	"subPackages": [
 		"pkg",
 		"analyzer",
 		"db"
-	]
+	],
+	"targetType": "executable"
 }

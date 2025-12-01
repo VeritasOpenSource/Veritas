@@ -17,3 +17,7 @@ veritas-test-*
 *.obj
 *.lst
 /cache/
+root/db/syncALPM_DB_VERSION
+*.db
+*.lck
+dub.selections.json

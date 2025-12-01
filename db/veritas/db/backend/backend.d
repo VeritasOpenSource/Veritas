@@ -1,6 +1,6 @@
 module veritas.db.backend.backend;
 
-import veritas.pkg.pkg;
+import veritas.pkg;
 
 
 interface VrtsDBBackend {
